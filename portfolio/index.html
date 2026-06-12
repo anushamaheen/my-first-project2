@@ -1,303 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Advanced To-Do List</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:linear-gradient(135deg,#667eea,#764ba2);
-    padding:20px;
-}
-
-.container{
-    width:100%;
-    max-width:600px;
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
-
-h1{
-    text-align:center;
-    margin-bottom:20px;
-    color:#333;
-}
-
-.input-box{
-    display:flex;
-    gap:10px;
-    margin-bottom:15px;
-}
-
-.input-box input{
-    flex:1;
-    padding:12px;
-    border:2px solid #ddd;
-    border-radius:8px;
-    outline:none;
-}
-
-.input-box button{
-    padding:12px 18px;
-    border:none;
-    background:#667eea;
-    color:white;
-    border-radius:8px;
-    cursor:pointer;
-}
-
-.search-box{
-    width:100%;
-    padding:10px;
-    border:2px solid #ddd;
-    border-radius:8px;
-    margin-bottom:15px;
-}
-
-.info{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:15px;
-    font-weight:bold;
-}
-
-ul{
-    list-style:none;
-}
-
-li{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:#f4f4f4;
-    padding:12px;
-    margin:10px 0;
-    border-radius:8px;
-}
-
-.completed{
-    text-decoration:line-through;
-    color:gray;
-}
-
-.actions button{
-    margin-left:5px;
-    border:none;
-    padding:6px 10px;
-    border-radius:5px;
-    cursor:pointer;
-}
-
-.complete-btn{
-    background:green;
-    color:white;
-}
-
-.edit-btn{
-    background:orange;
-    color:white;
-}
-
-.delete-btn{
-    background:red;
-    color:white;
-}
-
-.clear-btn{
-    width:100%;
-    margin-top:15px;
-    padding:12px;
-    border:none;
-    background:red;
-    color:white;
-    border-radius:8px;
-    cursor:pointer;
-}
-
-@media(max-width:480px){
-    .input-box{
-        flex-direction:column;
-    }
-
-    .input-box button{
-        width:100%;
-    }
-
-    .info{
-        flex-direction:column;
-        gap:5px;
-    }
-}
-</style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-<div class="container">
-    <h1>📝 To-Do List</h1>
-
-    <div class="input-box">
-        <input type="text" id="taskInput" placeholder="✨what's on your next agenda?"
-        ">
-        <button onclick="addTask()">Add</button>
+<center>
+    <h1>Welcome to My Portfolio</h1>
+    <div class="profile">
+<img src="image.jpeg" alt="My Image" width="200" height="200">
     </div>
+</center>
+<center>
+    <p>Web Developer | Student | Designer</p>
+</center>
+</body>
+<center>
+    <h2>🌸About Me</h2>
+</center>
+    <p>
+        Hello! My name is Anusha Maheen AP. 
+        I am currently pursuing BCA at Islamiah Women's Arts and Science College at Vaniyambadi.
+         A student with strong interest in web development and improving my technical skills everyday.
+        </p>
 
-    <input type="text" id="searchInput" class="search-box"
-           placeholder="🌸Search your agenda..." onkeyup="searchTask()">
+<hr>
+<center>
+    <h2>🎓 EDUCATION</h2>
+</center>
+    <table border="1">
+        <caption>Academic details</caption
+    <tr>
+        <th> Qualification</th>
+        <th>SCHOOL/COLLEGE</th>
+        <th>YEAR OF PASSING</th>
+    </tr>
+    <tr>
+        <td>BCA</td>
+        <td>Islamiah Women's Arts and Science College</td>
+        <td>2024-2027</td>
+    </tr>
+    <tr>
+        <td>HSC</td>
+        <td>Islamiah Girls Higher Secondary School</td>
+        <td>2023-2024</td>
+    </tr>
+    <tr>
+<td>SSLC</td>
+<td>Islamiah Girls Higher Secondary School</td>
+<td>2021-2022</td>
+    </tr>
+</table>
 
-    <div class="info">
-        <span>Total Tasks: <span id="total">0</span></span>
-        <span>Completed: <span id="completed">0</span></span>
-    </div>
+<hr>
+<center>
+    <h2> 💻Skills</h2>
+</center>
+    <ul type="square">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>Data Structure</li>
+    </ul>
 
-    <ul id="taskList"></ul>
+    <hr>
 
-    <button class="clear-btn" onclick="clearAllTasks()">
-        ⭐RESET YOUR AGENDA
-    </button>
-</div>
+<center>
+    <h2> 🎯 CAREER OBJECTIVE</h2>
+</center>
+    <P>As a motivated and enthusiastic student, 
+        I aim to build a successful career by gaining hands-on experience, 
+        developing my technical and professional skills,
+         and making valuable contributions to the growth of an organization.
+</P>
 
-<script>
-let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+<hr>
+<center>
+    <h2>🏆CERTIFICATIONS</h2>
+</center>
+<ul type="square">
+    <li>Front End Web Development</li>
+    <li>Fundamentals of Web Development</li>
+    <li>Wadhwani Foundation</li>
+    <li>EAMP 5</li>
+</ul>
 
-function saveTasks(){
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-}
+<hr>
+<center>
+    <h2>🚀Projects</h2>
+</center>
+    <ul type="square">
+        <li>Digital Portfolio</li>
+        <li>Student Registration Form</li>
+        <li>To-Do List</li>
+    </ul>
 
-function updateCounts(){
-    document.getElementById("total").innerText = tasks.length;
+<hr>
+<center>
+    <h2>📞Contact Me</h2>
+</center>
 
-    let completedCount = tasks.filter(
-        task => task.completed
-    ).length;
+<form id="contactForm" onsubmit="return validateForm()">
+    <label>Name:</label><br>
+    <input type="text" id="name" required oninvalid="this.setCustomValidation('Validation error')"><br>
+    <span id="nameError" style="color:red;"></span><br>
 
-    document.getElementById("completed").innerText =
-    completedCount;
-}
+    <label>Email:</label><br>
+    <input type="text" id="email" required oninvalid="this.setCustomValidation('Validation error')"><br>
+    <span id="emailError" style="color:red;"></span><br>
+    <label>Phone:</label><br>
+    <input type="text" id="phone" required oninvalid="this.setCustomValidation('Validation error')"><br>
+    <span id="phoneError" style="color:red;"></span><br>
 
-function renderTasks(){
-    let taskList = document.getElementById("taskList");
-    taskList.innerHTML = "";
+    <button type="submit">Submit</button>
+</form>
 
-    tasks.forEach((task,index)=>{
-        let li = document.createElement("li");
-
-        li.innerHTML = `
-        <span class="${task.completed ? 'completed' : ''}">
-            ${task.text}
-        </span>
-
-        <div class="actions">
-            <button class="complete-btn"
-            onclick="toggleTask(${index})">✓</button>
-
-            <button class="edit-btn"
-            onclick="editTask(${index})">✏️</button>
-
-            <button class="delete-btn"
-            onclick="deleteTask(${index})">🗑</button>
-        </div>
-        `;
-
-        taskList.appendChild(li);
-    });
-
-    updateCounts();
-}
-
-function addTask(){
-    let input = document.getElementById("taskInput");
-
-    if(input.value.trim()===""){
-        alert("Please enter a task");
-        return;
-    }
-
-    tasks.push({
-        text:input.value,
-        completed:false
-    });
-
-    input.value="";
-    saveTasks();
-    renderTasks();
-}
-
-function deleteTask(index){
-    tasks.splice(index,1);
-    saveTasks();
-    renderTasks();
-}
-
-function toggleTask(index){
-    tasks[index].completed=!tasks[index].completed;
-    saveTasks();
-    renderTasks();
-}
-
-function editTask(index){
-    let newTask = prompt(
-        "Edit Task",
-        tasks[index].text
-    );
-
-    if(newTask && newTask.trim()!==""){
-        tasks[index].text=newTask;
-        saveTasks();
-        renderTasks();
-    }
-}
-
-function clearAllTasks(){
-    if(confirm("Delete all tasks?")){
-        tasks=[];
-        saveTasks();
-        renderTasks();
-    }
-}
-
-function searchTask(){
-    let filter =
-    document.getElementById("searchInput")
-    .value.toLowerCase();
-
-    let items =
-    document.querySelectorAll("#taskList li");
-
-    items.forEach(item=>{
-        let text =
-        item.querySelector("span")
-        .innerText.toLowerCase();
-
-        item.style.display =
-        text.includes(filter)
-        ? "flex"
-        : "none";
-    });
-}
-
-document.getElementById("taskInput")
-.addEventListener("keypress",function(e){
-    if(e.key==="Enter"){
-        addTask();
-    }
-});
-
-renderTasks();
-</script>
+<p id="successMsg" style="color:green;"></p>
+<hr>
+<p>
+<a href="https://www.linkedin.com/in/anusha-ap-047159348?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">visit my linkedin profile</a>
+</p>
+<hr>
+<p>
+    <a href="https://github.com/anushamaheen/my-first-project2.git" target="_blank">Visit My GitHub Repository</a>
+</p>
+<hr>
+    <center>
+        <p>🌷Thank you for visiting my portfolio!🌷</p>
+    </center>
+<hr> 
 
 </body>
 </html>
